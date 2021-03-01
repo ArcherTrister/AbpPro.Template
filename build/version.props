@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <VersionPrefix>4.2.1</VersionPrefix>
+    <VersionSuffixVersion></VersionSuffixVersion>
+    <Version>$(VersionPrefix)$(VersionSuffixVersion)</Version>
+    <AssemblyVersion>$(VersionPrefix).0</AssemblyVersion>
+    <FileVersion>$(VersionPrefix).0</FileVersion>
+  </PropertyGroup>
+</Project>

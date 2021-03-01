@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project=".\build\packages.props" />
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+	  <PackageId>AbpPro.Template</PackageId>
+	  <Summary>AbpPro Template</Summary>
+	  <Description>AbpPro 模板项目</Description>
+	  <IncludeContentInPack>true</IncludeContentInPack>
+	  <IncludeBuildOutput>false</IncludeBuildOutput>
+	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DocumentationFile>bin\Release\AbpPro.Template.xml</DocumentationFile>
+	  <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    #- name: Run Script
+    #  shell: bash
+    #  run: |
+    #    sh createDir.sh
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.100
+    #- name: Echo
+    #  run: |
+    #    echo ::SOLUTION_FOLDER
+    #    echo ::.\SOLUTION_FOLDER\PROJECT_FOLDER
+    #    echo ::ORGANIZATION_NAME
+    #    echo SOLUTION_FOLDER
+    #    echo .\SOLUTION_FOLDER\PROJECT_FOLDER
+    #    echo ORGANIZATION_NAME
+    - name: Install dependencies
+      run: dotnet restore
+    #- name: Build
+    #  run: |
+    #    dotnet build ./AbpPro.Template.csproj --configuration Release --no-restore
+    #- name: Pack
+    #  run: |
+    #    dotnet pack ./AbpPro.Template.csproj --configuration Release --no-build -o ./publish/nuget
+    - name: Install Nuget
+      uses: nuget/setup-nuget@v1
+      with:        
+        nuget-version: '5.x'
+    - name: Pack
+      run: |
+        nuget pack ./AbpPro.Template.csproj --configuration Release --no-build -o ./publish/nuget
+    - name: Push
+      run: |
+        cd ./publish/nuget
+        dotnet nuget push "*.nupkg" -s https://nuget.pkg.github.com/ArcherTrister/index.json -k ${{ secrets.GITHUBPACKAGESKEY }} --skip-duplicate
+        dotnet nuget push "*.nupkg" -s https://api.nuget.org/v3/index.json -k ${{ secrets.NugetKey }} --skip-duplicate

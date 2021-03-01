@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "ArcherTrister",
+  "classifications": [ "Abp Pro/Web/WebAPI" ],
+  "name": "AbpPro Template",
+  "identity": "AbpPro.Demo.CSharp",
+  "groupIdentity": "AbpPro.Sample",
+  "shortName": "abpPro",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Acme.BookStore",
+  "preferNameDirectory": true,
+  "symbols": {
+    "it": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Include test(Aspnet Core Test)"
+    },
+    "iv": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Include Vue"
+    },
+    "ia": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Include Angular"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(it)",
+          "exclude": [ "aspnet-core/test/**/*" ]
+        },
+        {
+          "condition": "(iv)",
+          "exclude": [ "vue/**/*" ]
+        },
+        {
+          "condition": "(ia)",
+          "exclude": [ "angular/**/*" ]
+        }
+      ]
+    }
+  ]
+}
