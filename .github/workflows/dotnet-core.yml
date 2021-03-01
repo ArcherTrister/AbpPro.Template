@@ -43,7 +43,7 @@ jobs:
         nuget-version: '5.x'
     - name: Pack
       run: |
-        nuget pack ./AbpPro.Template.csproj --configuration Release --no-build -o ./publish/nuget
+        nuget pack ./AbpPro.Template.csproj -p Configuration=Release -NoDefaultExcludes -OutputDirectory ./publish/nuget
     - name: Push
       run: |
         cd ./publish/nuget
