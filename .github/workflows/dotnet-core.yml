@@ -35,7 +35,7 @@ jobs:
     #  run: |
     #    dotnet build ./AbpPro.Template.csproj --configuration Release --no-restore
     - name: Pack
-     run: |
+      run: |
        dotnet pack ./AbpPro.Template.csproj --configuration Release --no-build -o ./publish/nuget
     # - name: Install Nuget
     #   uses: nuget/setup-nuget@v1
