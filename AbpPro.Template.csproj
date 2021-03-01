@@ -15,6 +15,9 @@
 	  <IncludeBuildOutput>false</IncludeBuildOutput>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	  <ContentTargetFolders>content</ContentTargetFolders>
+    <Title>LeXun Templates</Title>
+    <Description>Templates to use when creating an application for LeXun Corporation.</Description>
+    <PackageTags>dotnet-new;templates;abp-vnext-pro</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

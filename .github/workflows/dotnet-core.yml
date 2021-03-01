@@ -34,16 +34,16 @@ jobs:
     #- name: Build
     #  run: |
     #    dotnet build ./AbpPro.Template.csproj --configuration Release --no-restore
-    #- name: Pack
-    #  run: |
-    #    dotnet pack ./AbpPro.Template.csproj --configuration Release --no-build -o ./publish/nuget
-    - name: Install Nuget
-      uses: nuget/setup-nuget@v1
-      with:        
-        nuget-version: '5.x'
     - name: Pack
-      run: |
-        nuget pack ./AbpPro.Template.csproj -p Configuration=Release -NoDefaultExcludes -OutputDirectory ./publish/nuget
+     run: |
+       dotnet pack ./AbpPro.Template.csproj --configuration Release --no-build -o ./publish/nuget
+    # - name: Install Nuget
+    #   uses: nuget/setup-nuget@v1
+    #   with:        
+    #     nuget-version: '5.x'
+    # - name: Pack
+    #   run: |
+    #     nuget pack ./AbpPro.Template.csproj -p Configuration=Release -NoDefaultExcludes -OutputDirectory ./publish/nuget
     - name: Push
       run: |
         cd ./publish/nuget
