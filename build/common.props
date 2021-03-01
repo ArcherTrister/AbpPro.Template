@@ -16,7 +16,7 @@
     <!--CS1587	XML 注释没有放在有效语言元素上-->
     <!--CS8002	没有强名称-->
     <!--IDE1006	命名规则冲突: 这些字必须以大写字符开头: sendTradeQuery	Alipay.AopSdk.F2FPay-->
-    <NoWarn>$(NoWarn);CS0618,CS8002,CS0108,CS1570,CS1572,CS1573,CS1591,IDE0017,IDE0018,IDE0019,NU5128,NU5110,NU5119</NoWarn>
+    <NoWarn>$(NoWarn);CS0618,CS8002,CS0108,CS1570,CS1572,CS1573,CS1591,IDE0017,IDE0018,IDE0019,NU5128,NU5110,NU5119,NU5111</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
