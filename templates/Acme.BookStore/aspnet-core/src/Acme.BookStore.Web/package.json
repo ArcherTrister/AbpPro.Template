@@ -3,13 +3,13 @@
   "name": "my-app",
   "private": true,
   "dependencies": {
-    "@volo/abp.aspnetcore.mvc.ui.theme.lepton": "^4.2.1",
-    "@volo/saas": "^4.2.1",
-    "@volo/audit-logging": "^4.2.1",
-    "@volo/identity": "^4.2.1",
-    "@volo/account": "^4.2.1",
-    "@abp/blogging": "^4.2.1",
-    "@abp/virtual-file-explorer": "^4.2.1",
-    "@volo/file-management": "^4.2.1"
+    "@volo/abp.aspnetcore.mvc.ui.theme.lepton": "^4.2.2",
+    "@volo/saas": "^4.2.2",
+    "@volo/audit-logging": "^4.2.2",
+    "@volo/identity": "^4.2.2",
+    "@volo/account": "^4.2.2",
+    "@abp/blogging": "^4.2.2",
+    "@abp/virtual-file-explorer": "^4.2.2",
+    "@volo/file-management": "^4.2.2"
   }
 }

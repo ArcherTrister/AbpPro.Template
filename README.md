@@ -1,6 +1,18 @@
 # Important
 
-Issues of this repository are tracked on https://github.com/ArcherTrister/AbpPro.Template. Please create your issues on https://github.com/ArcherTrister/AbpPro.Template/issues.
+Issues of this repository are tracked on https://github.com/ArcherTrister/AbpPro.Template.
+
+Please create your issues on https://github.com/ArcherTrister/AbpPro.Template/issues.
+
+运行项目需要配置
+1. ABP Commercial NuGet Source 【重要】
+2. AbpLicenseCode 【重要】
+3. ABP-CLI 登录，还可以使用<font color="red">AbpLicense.bin</font>文件代替【目前应该是项目调试需要，好像跟发布无关】
+
+因开源协议原因，无法提供相关配置，自行问度娘，如果需要可以考虑有偿提供，主要是<font color="red">AbpLicense.bin</font>文件，但仅保证本项目现有发布版本
+
+当前项目发布最低版本为<font color="red">4.2.1</font>，理论上支持其以下版本
+
 
 # Status
 [![.NET Core](https://github.com/ArcherTrister/AbpPro.Template/actions/workflows/dotnet-core.yml/badge.svg)](https://github.com/ArcherTrister/AbpPro.Template/actions/workflows/dotnet-core.yml)
