@@ -38,26 +38,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Autofac" Version="4.2.2" />
-    <PackageReference Include="Volo.Abp.Swashbuckle" Version="4.2.2" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="4.2.2" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="4.2.2" />
-    <PackageReference Include="Volo.Abp.FeatureManagement.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.VirtualFileExplorer.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.PermissionManagement.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.SettingManagement.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.LanguageManagement.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.AuditLogging.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.FileManagement.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.TextTemplateManagement.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.IdentityServer.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.Identity.Pro.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.Account.Pro.Public.Web.IdentityServer" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.Account.Pro.Admin.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Saas.Host.Web" Version="4.2.2" />
-	  <!--<PackageReference Include="Volo.Saas.Tenant.Web" Version="4.2.2" />-->
-	  <PackageReference Include="Volo.Abp.LeptonTheme.Management.Web" Version="4.2.2" />
-	  <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Lepton" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.VirtualFileExplorer.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.PermissionManagement.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.SettingManagement.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.LanguageManagement.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.AuditLogging.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.FileManagement.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.TextTemplateManagement.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.IdentityServer.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.Identity.Pro.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.Account.Pro.Public.Web.IdentityServer" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.Account.Pro.Admin.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Saas.Host.Web" Version="4.3.0" />
+	  <!--<PackageReference Include="Volo.Saas.Tenant.Web" Version="4.3.0" />-->
+	  <PackageReference Include="Volo.Abp.LeptonTheme.Management.Web" Version="4.3.0" />
+	  <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Lepton" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -31,6 +31,8 @@ namespace Acme.BookStore.Web.Menus
             var l = context.GetLocalizer<BookStoreResource>();
 
             context.Menu.Items.Insert(0, new ApplicationMenuItem(BookStoreMenus.Home, l["Menu:Home"], "~/"));
+
+            await Task.CompletedTask;
         }
     }
 }
